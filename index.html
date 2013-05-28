@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Strip Modal</title>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>	
+		<script type="text/javascript" src="jquery.stripmodal.js"></script>
+		
+		<link rel="stylesheet" href="strip-modal.css" type="text/css" />
+		
+		<style type="text/css">
+			
+			body {
+				
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				width: 60%;
+				margin: 50px auto;
+				color: #333;
+				background-color: #ddd;
+			}
+			
+			input {
+				
+				border-radius: 2px;
+				padding: 4px;
+				border: 1px solid #aaa;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+			}
+		
+		</style>
+		
+		<script>
+		
+			function DoModalDemo(type) {
+			
+				var title = $("#title-text").val() == "" ? "Default Title" : $("#title-text").val();
+				var text = $("#main-text").val() == "" ? "Default text to display" : $("#main-text").val();
+				
+				// Display the alert.
+				$().stripModal({
+					type: type,
+					title: title,
+					text: text
+				});
+			}
+		
+		</script>
+		
+	</head>
+	
+	<body>
+	
+	<h1>Strip Modal Demo Page</h1>
+	
+	<div>
+
+		<div>
+			<input type="text" id="title-text" placeholder="Title to use"/>
+		</div>
+
+		<div>
+			<input type="text" id="main-text" placeholder="Text to use"/>
+		</div>
+		
+		<div>
+			Display an alert box:
+			<button type="button" onclick="DoModalDemo('alert');">Alert</button>
+		</div>
+		
+		<div>
+			Display a success box:
+			<button type="button" onclick="DoModalDemo('success');">Success</button>
+		</div>
+		
+		<div>
+			Display an error box:
+			<button type="button" onclick="DoModalDemo('error');">Error</button>
+		</div>
+		
+		<div>
+			Display a caution box:
+			<button type="button" onclick="DoModalDemo('caution');">Caution</button>
+		</div>
+		
+		<div>
+			Display an info box:
+			<button type="button" onclick="DoModalDemo('info');">Info</button>
+		</div>
+
+	</div>
+	
+	
+	</body>
+	
+</html>

@@ -1,0 +1,88 @@
+		div.strip-modal-container {
+			
+			width: 100%;
+			padding: 20px 0;
+			color: #fff;
+			background-color: #444;
+			font-family: "Helvetica Neue", Arial, sans-serif;
+			text-align: center;
+			position: fixed;
+			left: 0;
+			top: 30%;
+			line-height: 30px;
+			z-index: 3;
+			box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+			-webkit-transition: all 0.2s;
+			-moz-transition: all 0.2s;
+			-o-transition: all 0.2s;
+			-ms-transition: all 0.2s;
+			transition: all 0.2s;
+			
+			/* Makes it invisible to begin with. */
+			margin-top: -100%;
+		}
+		
+		div.strip-modal-container.alert {
+			
+			background-color: #444;
+		}
+		
+		div.strip-modal-container.success {
+			
+			background-color: #0d6900;
+		}
+		
+		div.strip-modal-container.error {
+			
+			background-color: #a00;
+		}
+		
+		div.strip-modal-container.caution {
+			
+			background-color: #d16400;
+		}
+		
+		div.strip-modal-container.info {
+			
+			background-color: #005875;
+		}
+		
+		
+		div.strip-modal-container div.strip-modal-inner {
+			
+			display: inline-block;
+			text-align: left;
+			min-width: 30%;
+			max-width: 80%;
+		}
+		
+		div.strip-modal-container div.strip-modal-inner div.strip-modal-title {
+			
+			font-weight: bold;
+			font-size: 18px;
+		}
+		
+		div.strip-modal-container div.strip-modal-inner button {
+		
+			background-color: rgba(0,0,0,.2);
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-transform: uppercase;
+			color: #fff;
+			border-radius: 2px;
+			cursor: pointer;
+			width: 80px;
+			margin: 0 5px;
+			text-decoration: none;
+		}
+		
+		div.strip-modal-page-overlay {
+			
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			background-color: rgba(255, 255, 255, 0.75);
+			left: 0;
+			top: 0;
+		}

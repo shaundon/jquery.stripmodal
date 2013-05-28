@@ -7,11 +7,13 @@ index.html contains an example of how to call the plugin (it's embedded in a scr
 
 However, some basic instructions:
 
+```javascript
 $().stripModal({
 	type: "alert type",
 	title: "Title to use",
 	text: "Text to display"
 });
+```
 
 The possible values for the parameters are:
 

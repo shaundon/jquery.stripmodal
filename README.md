@@ -28,3 +28,5 @@ The possible values for the parameters are:
 * text: The text to display.
 
 It's not currently possible (by design) to have more than one modal on screen at once. If you call the plugin while a modal is already displayed, the current one will first be dismissed.
+
+Works in all modern browsers, including IE7+ (if you count those as modern) and is great on mobile too (try the demo page).

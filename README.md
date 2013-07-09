@@ -1,7 +1,7 @@
 jquery.stripmodal
 =================
 
-Demo at http://sdonnelly.co.uk/strip-modal
+Demo at http://sdonnelly.co.uk/projects/strip-modal
 
 A jQuery plugin for displaying various types of modal messages as a stripe across the screen.
 
